@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
+#include <math.h>
 void tower(int n, int source, int temp,int destination)
-DS LAB (BCSL305)
-Prepared by Prof. Shruthi S , Dept Of AI & DS
 {
 if(n == 0)
 return;
@@ -17,5 +15,4 @@ printf("\nEnter the number of discs: \n");
 scanf("%d", &n);
 tower(n, 'A', 'B', 'C');
 printf("\n\nTotal Number of moves are: %d", (int)pow(2,n)-1);
-getch();
 }
