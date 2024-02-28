@@ -1,0 +1,40 @@
+data()
+> data("airquality")
+> print(airquality)
+Program
+# Load the air quality dataset
+data("airquality")
+a) Assigning names, using the air qua-
+lity data set
+>names(airquality) < - c("Day", "Month
+"
+, 
+"ozone"
+, 
+"Solar
+.R
+"
+, 
+"Wind"
+, 
+"Temp
+")
+b)Change colors of the Histogram
+>hist(airquality$ozone, col = "skyblue
+"
+, main 
+= 
+"Histogram of ozone Levels
+")
+c)Remove Axis and Add labels to Hist-
+ogram
+>hist(airquality$ozone, col = "light-
+green", main = "Histogram of ozone
+Levels", xlab = "ozoneLevels", ylab =
+"Frequency"
+, axes 
+= FALSE)
+> axis(side = 1, at = seq(0, 200, by =
+25), labels = seq(0, 200, by = 25))
+> axis(side = 2)
+> box()
